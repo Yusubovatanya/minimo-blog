@@ -1,0 +1,238 @@
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #b4ad9e;
+}
+
+a:hover {
+  color: #898377;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h2, h3 {
+  margin: 1rem 0;
+  font-size: 30px;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+.header .navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header .navbar-nav .nav-link {
+  color: #626262;
+}
+
+.header .navbar-light {
+  background-color: #fff;
+}
+
+.header .navbar-brand {
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header .nav-item {
+  text-transform: uppercase;
+  margin-left: 50px;
+}
+
+.header .nav-item a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+  height: 1px;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.header .nav-item a:hover::after {
+  transform: scale(1);
+}
+
+/* slider */
+.slider {
+  margin-bottom: 100px;
+}
+
+.wrapper {
+  padding: 0 80px;
+}
+
+/* single post */
+.single-post {
+  margin-bottom: 100px;
+}
+
+.post-category, .link-more {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.post-title a {
+  color: #626262;
+}
+
+.post-text {
+  margin-bottom: 50px;
+}
+
+/* grid-posts */
+
+.grid-posts {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.grid-posts .card {
+  border: 0;
+  margin-bottom: 100px;
+  max-width: 460px;
+}
+
+.grid-posts .col-md-6:nth-child(2n) .card {
+  margin-left: auto;
+}
+
+.grid-posts .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.grid-posts .card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* load more */
+.load-more {
+  border-color: #626262;
+  border-radius: 0;
+  padding: 1rem 2rem;
+}
+
+.load-more span {
+  display: none;
+}
+
+/* signup */
+.signup {
+  background-color: #f0f0f0;
+  padding: 70px 0;
+}
+
+.signup h3 {
+  color: #333;
+}
+
+.signup form {
+  margin-top: 70px;
+}
+
+.signup .form-input {
+  position: relative;
+}
+
+.signup .form-control {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.signup .form-control:focus {
+  box-shadow: none;
+}
+
+.signup .form-input .btn {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  font-size: 25px;
+}
+
+/* footer */
+.footer {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  color: #000;
+}
+
+.footer-left a {
+  color: #000;
+  margin-right: 20px;
+}
+
+.footer-right a {
+  color: #626262;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+
+  .header {
+    margin-bottom: 15px;
+  }
+
+  .grid-posts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .slider,
+  .grid-posts .card,
+  .single-post {
+    margin-bottom: 50px;
+  }
+
+  .header .nav-item {
+    margin-left: 0;
+  }
+
+  .signup {
+    padding: 50px 0;
+  }
+
+  .signup form {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-posts .card {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-left {
+    margin-bottom: 10px;
+  }
+}
